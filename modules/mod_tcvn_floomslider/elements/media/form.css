@@ -1,0 +1,114 @@
+/*
+# ------------------------------------------------------------------------
+# TCVN Carousel Slideshow Module for Joomla 2.5
+# ------------------------------------------------------------------------
+# Copyright(C) 2008-2012 www.thecoders.vn. All Rights Reserved.
+# @license http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPL
+# Author: Thecoders.vn
+# Websites: http://Thecoders.com
+# ------------------------------------------------------------------------
+*/
+
+.pane-sliders .panel h3 {
+	padding:12px!important;	
+}
+.ga-even  h3{ background:#f9f9f9!important;}
+
+.ga-odd:hover,.ga-even:hover{ border:#E2E2E2 solid 1px!important}
+.ga-odd:hover h3,.ga-even:hover h3{ background:#f2f2f2!important; color:#fff!important}
+#CONTENTSETTING-options{   }
+#IMAGESETTING-options{ }
+.it-box{position:absolute;top:40%; left:45%; z-index:1000; background:url(bg_trans.png);-moz-border-radius: 2em 1em; border-radius: 2em 1em;border: 5px solid #c4c8cc;-moz-box-shadow: 5px 5px 7px #888;}
+.it-box .it-message{padding:50px 100px;	color:#FAFAFA;font-weight:bold;}
+.ga-switcher-yes,.ga-switcher-no  {
+        background: url("yes_no.png") no-repeat scroll 0 0 transparent;
+        cursor: pointer;
+        float: left;
+        height: 28px;
+        margin-top: 4px;
+        width: 42px;
+    }
+    .ga-switcher-yes {
+        background-position: -42px 0px;
+    }
+/*
+ * Form 
+ */
+ .it-addrow-block .row { padding:3px 0px;display:block;clear:both; cursor:hand; cursor:pointer }
+ .it-addrow-block input[type=text] {float:left; width:70%}
+ .it-addrow-block .row .remove { display:block; float:left; background:url(remove.png) no-repeat;width:20px; height:16px;margin-left:12px}
+ .it-addrow-block  .add{ background:url(add.png) no-repeat;width:26px; height:26px; display:block; text-indent:-999cm; cursor:hand; cursor:pointer}
+ .it-header{ border:#FAFAFA solid 1px; background:#FAFAFA ;padding:5px 0 5px 50px}
+
+#module-form  legend{
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 11px;
+    background: #CF052B;
+    color: #fff;
+    margin-left: -2px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px; 
+    -moz-border-radius-bottomleft:3px;
+    -webkit-border-bottom-left-radius:3px; text-shadow: 0px 1px 1px #000; 
+}
+
+	.ga-wrapper .ga-toolbars { clear:both; padding:12px 0px;}
+.ga-wrapper .ga-toolbar-items li{ display:block; font-weight:bold; float:left; display:block;
+   background: #333; margin:4px 5px 10px 0;
+ -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px; 
+    -moz-border-radius-bottomleft:3px;
+    -webkit-border-bottom-left-radius:3px;
+	padding:5px 9px;
+	color:#FFF;
+	cursor:hand; cursor:pointer;
+	text-shadow: 0px 1px 1px #000;
+}
+.ga-wrapper .ga-toolbar-items li:hover,.ga-wrapper .ga-toolbar-items li.active{  background:url(arrow.png) no-repeat  30px 0 #999;}
+.ga-wrapper .ga-fscontainer{ clear:both; position:relative; padding:12px 0; border:#CCCCCC solid 1px;   -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px; 
+    -moz-border-radius-bottomleft:3px;
+    -webkit-border-bottom-left-radius:3px; }
+.ga-wrapper .ga-fscontainer h3{ padding:0;}
+.ga-wrapper .ga-fscontainer h3 span{color:#333;  background:#CCC; padding:4px 10px; font-size:11px; }
+.ga-wrapper .ga-fscontainer fieldset {
+	padding:0;
+	border:0; 
+	background:none;
+}
+#jform_params_custom_slider_class-lbl, #jform_params_override_links-lbl{ max-width:100%;}
+.it-addrow-block{ clear:both;}
+
+#jform_params_mycategory {
+	width:220px;
+}
+#jformparamsk2category {
+	width:220px;
+}
+/* CSS Document */
+.addnew {
+	clear:both;
+	height:40px;
+	margin-left:150px;
+}
+#addnew {
+	background:url(download.png) top left no-repeat;
+	height:36px;
+	padding-left:32px;
+	font-size:14px;
+	font-weight:bold;
+}
+.area-list {
+	margin-bottom:-10px;
+}
+#jform_params_area-lbl{
+	padding:5px 5px;
+	border-left:#FF0000 solid 10px;
+	background-color:#CCCCCC;
+	width:240px;
+	font-weight:bold;
+}

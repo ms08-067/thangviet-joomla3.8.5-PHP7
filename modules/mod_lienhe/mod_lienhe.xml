@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>lienhe</name>
+	<author>Hung Phan</author>
+	<creationDate>June 2014</creationDate>
+	<authorEmail>hunguit@yahoo.com</authorEmail>
+	<authorURL>http://mwebs.vn</authorURL>
+	<version>1.0</version>
+	<description>     
+    	Google Maps
+	</description>
+	
+	<files>
+		<filename>mod_lienhe.xml</filename>
+		<filename module="mod_lienhe">mod_lienhe.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+	</files>
+	
+	
+</extension>

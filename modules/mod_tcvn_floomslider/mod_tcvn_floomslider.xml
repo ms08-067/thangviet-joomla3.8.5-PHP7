@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+
+	<name>TCVN Floom Slider</name>
+    <creationDate>June 14, 2013</creationDate>
+    <author>TheCoders.vn</author>
+    <authorUrl>http://TheCoders.vn</authorUrl>
+	<authorEmail>contact@thecoders.vn</authorEmail>
+    <copyright>Copyright (C) 2011 - 2013 TheCoders.vn. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <version>3.2</version>
+	
+	<description>
+		<![CDATA[<div style="border: 1px solid red; border-radius: 7px; padding: 10px;">
+			<p><strong>TCVN Floom Slider</strong> comes with amazing transition effects (permutations and combinations of effects) and is compatible with Joomla 3.1.x The module is built using jQuery. It is very easy to install and configure with lot many features. The module can be used on homepage of a website to showcase the products,services and brand of a company. The module has navigation controls.</p>
+			<strong>TheCoders.vn</strong> - Free <a href="http://thecoders.vn/joomla-modules.html" target="_blank">Joomla Modules</a>, <a href="http://thecoders.vn/joomla-plugins.html" target="_blank">Joomla Plugins</a>, <a href="http://thecoders.vn/joomla-templates.html" target="_blank">Joomla Templates</a>.
+		</div>
+		<h3>Basic Options:</h3>
+		]]>
+	</description>
+	
+	<files>
+		<filename module="mod_tcvn_floomslider">mod_tcvn_floomslider.php</filename>
+		<filename>index.html</filename>
+		<filename>timthumb.php</filename>
+		<filename>helper.php</filename>		 
+		<folder>assets</folder>
+		<folder>elements</folder>
+		<folder>tmpl</folder>	
+	</files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB.mod_tcvn_floomslider.ini</language>
+    </languages>
+
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_tcvn_floomslider/elements" >
+			<!-- Thumbnail Configuration -->
+			<fieldset name="basic">				
+				<field type="xspacer" />
+				
+				<field name="mwidth" type="text" 					 
+					label="MOD_TCVN_FLOOMSLIDER_MWIDTH" 
+					description="MOD_TCVN_FLOOMSLIDER_MWIDTH_DESC" 
+					default="999" />
+				
+				<field name="mheight" type="text" 					 
+					label="MOD_TCVN_FLOOMSLIDER_MHEIGHT" 
+					description="MOD_TCVN_FLOOMSLIDER_MHEIGHT_DESC" 
+					default="430" />
+					
+				<field name="show_title" type="radio" 
+					label="MOD_TCVN_FLOOMSLIDER_SHOW_TITLE" 
+					description="MOD_TCVN_FLOOMSLIDER_SHOW_TITLE_DESC"
+					default="1"
+					class="btn-group btn-group-yesno"
+				>
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+				<field name="link_title" type="radio" 
+					label="MOD_TCVN_FLOOMSLIDER_LINK_TITLE" 
+					description="MOD_TCVN_FLOOMSLIDER_LINK_TITLE_DESC"
+					default="1"
+					class="btn-group btn-group-yesno"
+				>
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+				<field name="item_target" type="list" 
+					label="MOD_TCVN_FLOOMSLIDER_LINK_TARGET" 
+					description="MOD_TCVN_FLOOMSLIDER_LINK_TARGET_DESC"
+					default="_blank"
+				>
+					<option value="_blank">_blank</option>
+					<option value="_self">_self</option>
+					<option value="_parent">_parent</option>
+					<option value="_top">_top</option>
+				</field>
+				
+				<field name="show_desc" type="radio" 
+					label="MOD_TCVN_FLOOMSLIDER_SHOW_DESC" 
+					description="MOD_TCVN_FLOOMSLIDER_SHOW_DESC_DESC"
+					default="1"
+					class="btn-group btn-group-yesno"
+				>
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="random" type="radio" 
+					label="MOD_TCVN_FLOOMSLIDER_RANDOM" 
+					description="MOD_TCVN_FLOOMSLIDER_RANDOM_DESC"
+					default="0"
+					class="btn-group btn-group-yesno"
+				>
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="numberRandom" type="text" 					 
+					label="MOD_TCVN_FLOOMSLIDER_NUMBERRANDOM" 
+					description="MOD_TCVN_FLOOMSLIDER_NUMBERRANDOM_DESC" 
+					default="2" />
+			</fieldset>
+			
+			<!-- Source Configuration -->
+			<fieldset name="source">
+				<field name="image_url" type="media" 
+					label="MOD_TCVN_FLOOMSLIDER_IMAGE_URL" 
+					description="MOD_TCVN_FLOOMSLIDER_IMAGE_URL_DESC" 
+					size="30" />
+					
+				<field type="data" />
+				
+				<field name="data" type="textarea" 
+					label="MOD_TCVN_FLOOMSLIDER_ALL_DATA" 
+					description="MOD_TCVN_FLOOMSLIDER_ALL_DATA_DESC" 
+					rows="20" cols="60" />
+			</fieldset>
+			
+			<!-- Effect Setting-->
+			<fieldset name="effect">
+				<field name="effect" type="list" 
+					label="MOD_TCVN_FLOOMSLIDER_EFFECT" 
+					description="MOD_TCVN_FLOOMSLIDER_EFFECT_DESC"
+					default="wave"
+				>
+					<option value="wave">Wave</option>
+					<option value="zipper">Zipper</option>
+					<option value="curtain">Curtain</option>
+				</field>
+				
+				<field name="strips" type="text" 					 
+					label="MOD_TCVN_FLOOMSLIDER_STRIPS" 
+					description="MOD_TCVN_FLOOMSLIDER_STRIPS_DESC" 
+					default="20" />
+					
+				<field name="delay" type="text" 					 
+					label="MOD_TCVN_FLOOMSLIDER_DELAY" 
+					description="MOD_TCVN_FLOOMSLIDER_DELAY_DESC" 
+					default="5000" />
+				
+				<field name="stripDelay" type="text" 					 
+					label="MOD_TCVN_FLOOMSLIDER_STRIP_DELAY" 
+					description="MOD_TCVN_FLOOMSLIDER_STRIP_DELAY_DESC" 
+					default="50" />
+				
+				<field name="titleOpacity" type="text" 					 
+					label="MOD_TCVN_FLOOMSLIDER_TITLE_OPACITY" 
+					description="MOD_TCVN_FLOOMSLIDER_TITLE_OPACITY_DESC" 
+					default="0.7" />
+				
+				<field name="titleSpeed" type="text" 					 
+					label="MOD_TCVN_FLOOMSLIDER_TITLE_SPEED" 
+					description="MOD_TCVN_FLOOMSLIDER_TITLE_SPEED_DESC" 
+					default="1000" />								
+				
+				<field name="navigation" type="radio" 
+					label="MOD_TCVN_FLOOMSLIDER_SHOW_NAVIGATION" 
+					description="MOD_TCVN_FLOOMSLIDER_SHOW_NAVIGATION_DESC"
+					default="1"
+					class="btn-group btn-group-yesno"
+				>
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+			</fieldset>
+			
+			<!-- Advanced Configuration -->
+			<fieldset name="advanced">
+				<field name="jquery" type="radio"
+					default="0"
+					label="MOD_TCVN_FLOOMSLIDER_INCLUDE_JQUERY"
+					description="MOD_TCVN_FLOOMSLIDER_INCLUDE_JQUERY_DESC"
+					class="btn-group btn-group-yesno"
+				>
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="cache" type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+				>
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				
+				<field name="moduleclass_sfx" type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />									
+			</fieldset>
+		</fields>
+	</config>
+</extension>

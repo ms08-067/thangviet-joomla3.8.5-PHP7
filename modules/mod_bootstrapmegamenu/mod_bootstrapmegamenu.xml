@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+        <name>mod_bootstrapmegamenu</name>
+        <author>TVTMA</author>
+        <creationDate>September 2013</creationDate>
+        <copyright>Copyright (C) 2013 T.V.T Marine Automation (aka TVTMA). All rights reserved.</copyright>
+        <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+        <authorEmail>support@ma.tvtmarine.com</authorEmail>
+        <authorUrl>http://ma.tvtmarine.com</authorUrl>
+        <version>1.2.0</version>
+        <description>MOD_BOOTSTRAPMEGAMENU_XML_DESCRIPTION</description>
+        <files>
+                <filename module="mod_bootstrapmegamenu">mod_bootstrapmegamenu.php</filename>
+                <folder>assets</folder>
+                <folder>tmpl</folder>
+                <filename>helper.php</filename>
+                <filename>index.html</filename>
+                <filename>mod_bootstrapmegamenu.xml</filename>
+        </files>
+        <languages folder="language">
+                <language tag="en-GB">en-GB/en-GB.mod_bootstrapmegamenu.ini</language>
+                <language tag="en-GB">en-GB/en-GB.mod_bootstrapmegamenu.sys.ini</language>
+        </languages>
+        <help key="JHELP_EXTENSIONS_MODULE_MANAGER_MENU" />
+        <config>
+                <fields name="params">
+                        <fieldset name="basic">
+                                <field
+                                        name="menutype"
+                                        type="menu"
+                                        label="MOD_BOOTSTRAPMEGAMENU_FIELD_MENUTYPE_LABEL"
+                                        description="MOD_BOOTSTRAPMEGAMENU_FIELD_MENUTYPE_DESC" />
+                                <field
+                                        name="base"
+                                        type="menuitem"
+                                        label="MOD_BOOTSTRAPMEGAMENU_FIELD_ACTIVE_LABEL"
+                                        description="MOD_BOOTSTRAPMEGAMENU_FIELD_ACTIVE_DESC"
+                                >
+                                        <option value="">JCURRENT</option>
+                                </field>
+                                <field
+                                        name="startLevel"
+                                        type="list"
+                                        default="1"
+                                        label="MOD_BOOTSTRAPMEGAMENU_FIELD_STARTLEVEL_LABEL"
+                                        description="MOD_BOOTSTRAPMEGAMENU_FIELD_STARTLEVEL_DESC"
+                                >
+                                        <option value="1">J1</option>
+                                        <option value="2">J2</option>
+                                        <option value="3">J3</option>
+                                        <option value="4">J4</option>
+                                        <option value="5">J5</option>
+                                        <option value="6">J6</option>
+                                        <option value="7">J7</option>
+                                        <option value="8">J8</option>
+                                        <option value="9">J9</option>
+                                        <option value="10">J10</option>
+                                </field>
+
+                                <field
+                                        name="endLevel"
+                                        type="list"
+                                        default="0"
+                                        label="MOD_BOOTSTRAPMEGAMENU_FIELD_ENDLEVEL_LABEL"
+                                        description="MOD_BOOTSTRAPMEGAMENU_FIELD_ENDLEVEL_DESC"
+                                >
+                                        <option value="0">JALL</option>
+                                        <option value="1">J1</option>
+                                        <option value="2">J2</option>
+                                        <option value="3">J3</option>
+                                        <option value="4">J4</option>
+                                        <option value="5">J5</option>
+                                        <option value="6">J6</option>
+                                        <option value="7">J7</option>
+                                        <option value="8">J8</option>
+                                        <option value="9">J9</option>
+                                        <option value="10">J10</option>
+                                </field>
+
+                                <field
+                                        name="showAllChildren"
+                                        type="radio"
+                                        class="btn-group"
+                                        default="1"
+                                        label="MOD_BOOTSTRAPMEGAMENU_FIELD_ALLCHILDREN_LABEL"
+                                        description="MOD_BOOTSTRAPMEGAMENU_FIELD_ALLCHILDREN_DESC">
+                                        <option
+                                                value="0">JNO</option>
+                                        <option
+                                                value="1">JYES</option>
+                                </field>
+                        </fieldset>
+                        <fieldset name="MEGA_MENU">
+                                <field name="navbar_class"
+                                       type="text"
+                                       default="navbar-default"
+                                       label="MOD_BOOTSTRAPMEGAMENU_MNU_NAVBAR_CLASS_LABEL"
+                                       description="MOD_BOOTSTRAPMEGAMENU_MNU_NAVBAR_CLASS_DESC"
+                                />
+                                <field name="logo"
+                                       type="media"
+                                       default=""
+                                       label="MOD_BOOTSTRAPMEGAMENU_MNU_SITE_LOGO_LABEL"
+                                       description="MOD_BOOTSTRAPMEGAMENU_MNU_SITE_LOGO_DESC" />
+                                <field name="logo_img_class"
+                                       type="text"
+                                       default=""
+                                       label="MOD_BOOTSTRAPMEGAMENU_MNU_SITE_LOGO_CLASS_LABEL"
+                                       description="MOD_BOOTSTRAPMEGAMENU_MNU_SITE_LOGO_CLASS_DESC"
+                                />
+                                <field
+                                        name="enable_logo_link"
+                                        type="radio"
+                                        class="btn-group"
+                                        default="0"
+                                        label="MOD_BOOTSTRAPMEGAMENU_MNU_ENABLED_LOGO_LINK_LABEL"
+                                        description="MOD_BOOTSTRAPMEGAMENU_MNU_ENABLED_LOGO_LINK_DESC"
+                                        filter="intval">
+                                        <option value="0">No</option>
+                                        <option value="1">Yes</option>
+                                </field>
+                                <field name="logo_link_class"
+                                       type="text"
+                                       default=""
+                                       label="MOD_BOOTSTRAPMEGAMENU_MNU_SITE_LOGO_LINK_CLASS_LABEL"
+                                       description="MOD_BOOTSTRAPMEGAMENU_MNU_SITE_LOGO_LINK_CLASS_DESC"
+                                />
+                                <field
+                                        name="mnu_type"
+                                        type="list"
+                                        default="0"
+                                        label="MOD_BOOTSTRAPMEGAMENU_MNU_TYPE"
+                                        description="MOD_BOOTSTRAPMEGAMENU_MNU_TYPE_DESC">
+                                        <option value="0">None</option>
+                                        <option value="1">Nav Pills</option>
+                                        <option value="2">Nav Tabs</option>
+                                </field>
+                                <field
+                                        name="mnu_right_align"
+                                        type="radio"
+                                        class="btn-group"
+                                        default="0"
+                                        label="MOD_BOOTSTRAPMEGAMENU_MNU_ALIGNMENT_LABEL"
+                                        description="MOD_BOOTSTRAPMEGAMENU_MNU_ALIGNMENT_DESC">
+                                        <option value="0">Left</option>
+                                        <option value="1">Right</option>
+                                </field>
+                                <field
+                                        name="wrappertag"
+                                        type="radio"
+                                        class="btn-group"
+                                        default="nav"
+                                        label="MOD_BOOTSTRAPMEGAMENU_MNU_WRAPPER_LABEL"
+                                        description="MOD_BOOTSTRAPMEGAMENU_MNU_WRAPPER_DESC">
+                                        <option value="div">div</option>
+                                        <option value="nav">nav</option>
+                                </field>
+                                <field
+                                        name="enable_hoverdropdown"
+                                        type="radio"
+                                        class="btn-group"
+                                        default="0"
+                                        label="MOD_BOOTSTRAPMEGAMENU_MNU_ENABLE_HOVER_DROPDOWN_LABEL"
+                                        description="MOD_BOOTSTRAPMEGAMENU_MNU_ENABLE_HOVER_DROPDOWN_DESC">
+                                        <option value="0">No</option>
+                                        <option value="1">Yes</option>
+                                </field>
+                                <field
+                                        name="use_module_css"
+                                        type="radio"
+                                        class="btn-group"
+                                        default="1"
+                                        label="MOD_BOOTSTRAPMEGAMENU_MNU_USE_MODULE_CSS_LABEL"
+                                        description="MOD_BOOTSTRAPMEGAMENU_MNU_USE_MODULE_CSS_DESC"
+                                        filter="intval"
+                                >
+                                        <option value="0">No</option>
+                                        <option value="1">Yes</option>
+                                </field>
+                        </fieldset>
+                        <fieldset
+                                name="advanced">
+                                <field
+                                        name="tag_id"
+                                        type="text"
+                                        label="MOD_BOOTSTRAPMEGAMENU_FIELD_TAG_ID_LABEL"
+                                        description="MOD_BOOTSTRAPMEGAMENU_FIELD_TAG_ID_DESC" />
+
+                                <field
+                                        name="class_sfx"
+                                        type="text"
+                                        label="MOD_BOOTSTRAPMEGAMENU_FIELD_CLASS_LABEL"
+                                        description="MOD_BOOTSTRAPMEGAMENU_FIELD_CLASS_DESC" />
+
+                                <field
+                                        name="window_open"
+                                        type="text"
+                                        label="MOD_BOOTSTRAPMEGAMENU_FIELD_TARGET_LABEL"
+                                        description="MOD_BOOTSTRAPMEGAMENU_FIELD_TARGET_DESC" />
+
+                                <field
+                                        name="layout"
+                                        type="modulelayout"
+                                        label="JFIELD_ALT_LAYOUT_LABEL"
+                                        description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+                                <field
+                                        name="moduleclass_sfx"
+                                        type="textarea" rows="3"
+                                        label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                                        description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                                <field
+                                        name="cache"
+                                        type="list"
+                                        default="1"
+                                        label="COM_MODULES_FIELD_CACHING_LABEL"
+                                        description="COM_MODULES_FIELD_CACHING_DESC">
+                                        <option
+                                                value="1">JGLOBAL_USE_GLOBAL</option>
+                                        <option
+                                                value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                                </field>
+                                <field
+                                        name="cache_time"
+                                        type="text"
+                                        default="900"
+                                        label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                                        description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+                                <field
+                                        name="cachemode"
+                                        type="hidden"
+                                        default="itemid">
+                                        <option
+                                                value="itemid">
+                                        </option>
+                                </field>
+                        </fieldset>
+                </fields>
+        </config>
+</extension>

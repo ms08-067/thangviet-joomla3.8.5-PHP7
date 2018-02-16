@@ -1,0 +1,21 @@
+/*
+# ------------------------------------------------------------------------
+# TCVN Floom Slider Module for Joomla 3.1
+# ------------------------------------------------------------------------
+# Copyright(C) 2008-2013 www.thecoders.vn. All Rights Reserved.
+# @license http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPL
+# Author: TheCoders.vn
+# Websites: http://TheCoders.com
+# ------------------------------------------------------------------------
+*/
+.ft-prev, .ft-next {
+    background-color: #000000;
+    padding: 0 10px;
+}
+#slideshowHolder {
+    
+}
+.ft-title {
+    padding: 10px;
+    text-align: left;
+}

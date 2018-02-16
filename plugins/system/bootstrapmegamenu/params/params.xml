@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+        <fields name="params" addfieldpath="/plugins/system/bootstrapmegamenu/libs/element">
+                <fieldset name="t-bootstrapmegamenu" label="PLG_BOOTSTRAPMEGAMENU_LABEL">
+                        <field name="bootstrapmega_subtitle"
+                               type="text"
+                               rows="1"
+                               default="" size="22" label="PLG_BOOTSTRAPMEGAMENU_SUBTITLE_LABEL" description="PLG_BOOTSTRAPMEGAMENU_SUBTITLE_DESC" />
+                        <field name="glyphicon"
+                               type="text"
+                               default=""
+                               label="PLG_BOOTSTRAPMEGAMENU_GLYPHICON_LABEL"
+                               description="PLG_BOOTSTRAPMEGAMENU_GLYPHICON_DESC"
+                        />
+                        <field name="spacer"
+                               type="spacer"
+                               default=""
+                               label="PLG_BOOTSTRAPMEGAMENU_INSTRUCTION_LABEL"
+                        />
+                        <field name="multicol_start"
+                               type="radio"
+                               class="btn-group"
+                               default="0"
+                               label="MOD_BOOTSTRAPMEGAMENU_MULTI_COL"
+                               description="MOD_BOOTSTRAPMEGAMENU_MULTI_COL_DESC">
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                        </field>
+                        <field name="bootstrapmega_width"
+                               type="text" size="5"
+                               default="" label="PLG_BOOTSTRAPMEGAMENU_DROPDOWN_WIDTH_LABEL"
+                               description="PLG_BOOTSTRAPMEGAMENU_DROPDOWN_WIDTH_DESC" />
+                        <field name="left_offset"
+                               type="text" size="5"
+                               default="" label="PLG_BOOTSTRAPMEGAMENU_LEFT_OFFSET_LABEL"
+                               description="PLG_BOOTSTRAPMEGAMENU_LEFT_OFFSET_DESC" />
+                        <field name="right_offset"
+                               type="text" size="5"
+                               default="" label="PLG_BOOTSTRAPMEGAMENU_RIGHT_OFFSET_LABEL"
+                               description="PLG_BOOTSTRAPMEGAMENU_RIGHT_OFFSET_DESC" />
+                        <field name="bootstrapmega_colwidth"
+                               type="text"
+                               default="" size="22"
+                               label="PLG_BOOTSTRAPMEGAMENU_DROPDOWN_COL_WIDTH_LABEL"
+                               description="PLG_BOOTSTRAPMEGAMENU_DROPDOWN_COL_WIDTH_DESC"
+                        />
+<!--                        <field name="spacer1"
+                               type="spacer"
+                               class="text" label="PLG_BOOTSTRAPMEGAMENU_LOAD_MODULES_LABEL" />
+
+                        <field name="bootstrapmega_subtype"
+                               type="list"
+                               default="menu" label="PLG_BOOTSTRAPMEGAMENU_MNU_ITEM_TYPE_LABEL"
+                               description="PLG_BOOTSTRAPMEGAMENU_MNU_ITEM_TYPE_DESC">
+                                <option value="menu">PLG_BOOTSTRAPMEGAMENU_MNU_ITEM_TYPE_DEFAULT</option>
+                                <option value="mod">PLG_BOOTSTRAPMEGAMENU_MNU_ITEM_TYPE_MODULES</option>
+                                <option value="pos">PLG_BOOTSTRAPMEGAMENU_MNU_ITEM_TYPE_MODULES_POS</option>
+                        </field>
+                        <field name="bootstrapmega_modules"
+                               type="bootstrapmodules"
+                               default="0" label="PLG_BOOTSTRAPMEGAMENU_DISPLAY_BY_MOD_LABEL" description="PLG_BOOTSTRAPMEGAMENU_DISPLAY_BY_MOD_DESC" multiple="multiple" size="12" />
+                        <field name="bootstrapmega_positions"
+                               type="bootstrappositions"
+                               default="0" label="PLG_BOOTSTRAPMEGAMENU_DISPLAY_POS_LABEL"
+                               description="PLG_BOOTSTRAPMEGAMENU_DISPLAY_POS_DESC" multiple="multiple" size="12"
+                        />-->
+                </fieldset>
+        </fields>
+
+</form>

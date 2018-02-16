@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+        type="plugin"
+        version="3.0"
+        group="system"
+        method="upgrade">
+        <name>PLG_BOOTSTRAPMEGAMENU</name>
+        <author>TVTMA</author>
+        <creationDate>September 2013</creationDate>
+        <copyright>Copyright (C) 2013 T.V.T Marine Automation (aka TVTMA). All rights reserved.</copyright>
+        <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+        <authorEmail>support@ma.tvtmarine.com</authorEmail>
+        <authorUrl>http://ma.tvtmarine.com</authorUrl>
+        <version>1.0.1</version>
+        <description>PLG_BOOTSTRAPMEGAMENU_XML_DESCRIPTION</description>
+        <files folder="plugins/system/bootstrapmegamenu">
+                <file plugin="bootstrapmegamenu">bootstrapmegamenu.php</file>
+                <folder>params</folder>
+                <folder>libs</folder>
+        </files>
+        <languages folder="language">
+                <language tag="en-GB">en-GB/en-GB.plg_system_bootstrapmegamenu.ini</language>
+                <language tag="en-GB">en-GB/en-GB.plg_system_bootstrapmegamenu.sys.ini</language>
+        </languages>
+
+        <config>
+                <fields name="params">
+                        <fieldset name="basic">
+                                <field name="t-boostrapmegamenu_bootstrapversion"
+                                       type="radio"
+                                       class="btn-group"
+                                       default="2.x"
+                                       label="PLG_BOOTSTRAPMEGAMENU_BOOTSTRAP_VERSION_LABEL"
+                                       description="PLG_BOOTSTRAPMEGAMENU_BOOTSTRAP_VERSION_DESC">
+                                        <option value="2.x">2.x</option>
+                                        <option value="3.x">3.x</option>
+                                </field>
+                        </fieldset>
+                </fields>
+        </config>
+
+</extension>
